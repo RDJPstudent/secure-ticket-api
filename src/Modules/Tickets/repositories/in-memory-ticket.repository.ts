@@ -134,6 +134,13 @@ implements TicketRepository {
             };
         }
 
+        if (current.version !== expectedVersion) {
+            return {
+                kind: "VERSION_CONFLICT",
+                currentVersion: current.version,
+            };
+        }
+
         const updated: Ticket = {
             ...current,
             ...mutation,
