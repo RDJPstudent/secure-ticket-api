@@ -184,7 +184,7 @@ export class TicketService {
                 command.description;
         }
 
-        return this.performVersionedUpdate(
+        return this.performVersionUpdate(
             ticketId,
             command.expectedVersion,
             mutation,
@@ -231,7 +231,7 @@ export class TicketService {
             );
         }
 
-        return this.performVersionedUpdate(
+        return this.performVersionUpdate(
             ticketId,
             command.expectedVersion,
             {
@@ -241,7 +241,7 @@ export class TicketService {
         );
     }
 
-    private async findVisibileTicket(
+    private async findVisibleTicket(
         actor: Principal,
         ticketId: string,
     ): Promise<Ticket | null> {
