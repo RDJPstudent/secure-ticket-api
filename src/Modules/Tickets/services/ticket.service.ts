@@ -1,6 +1,6 @@
 import type {
     Principal,
-} from "../../../Shared/Types/Principal.js";
+} from "../../../Shared/types/Principal.js";
 
 import type {
     Ticket,

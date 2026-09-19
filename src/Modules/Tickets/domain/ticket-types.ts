@@ -11,5 +11,5 @@ export interface Ticket {
     version: number;
 
     createdAt: Date;
-    updateAt: Date
+    updatedAt: Date
 }

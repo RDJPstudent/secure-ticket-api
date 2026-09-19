@@ -11,10 +11,11 @@
         "noUncheckedIndexedAccess": true,
         "exactOptionalPropertyTypes": true,
 
+        "types": ["node"],
+
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
 
-        "types": ["node"],
 
         "skipLibCheck": true
     },
